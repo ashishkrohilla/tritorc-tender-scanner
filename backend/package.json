@@ -1,0 +1,22 @@
+{
+  "name": "tritorc-tender-scanner-backend",
+  "version": "1.0.0",
+  "description": "Backend for Tritorc Tender/SOW Keyword Scanner",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2",
+    "mammoth": "^1.7.2",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

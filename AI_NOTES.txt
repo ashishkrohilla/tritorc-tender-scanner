@@ -1,0 +1,36 @@
+AI_NOTES.txt
+============
+NOTE TO SELF (candidate): personalize this file with your own words before
+submitting — interviewers may ask you to walk through your process, so make
+sure it matches what you can actually explain.
+
+AI tool used: Claude (Anthropic)
+
+Prompt 1:
+"I have a take-home assignment to build a full-stack tender/SOW keyword
+scanner (React + Node/Express). Here is the brief [pasted]. Help me
+understand exactly what's required and scaffold the backend: file upload,
+PDF/DOCX text extraction with pdf-parse/mammoth, keyword matching against a
+config file, and Excel report generation with exceljs."
+-> Output used: mostly as a starting scaffold (server.js, routes/scan.js,
+   utils/extractText.js). Modified: adjusted error handling and file cleanup
+   after review.
+
+Prompt 2:
+"Write the keyword matching logic so it's case-insensitive and handles
+simple variants like 'torque wrench' vs 'torque wrenches' without a full
+stemming library, and make the relevance verdict computed dynamically from
+match count rather than hardcoded."
+-> Output used directly for utils/keywordMatch.js, then reviewed the regex
+   logic line by line to make sure I could explain it.
+
+Prompt 3:
+"Build a simple responsive React upload UI (drag-and-drop, file list,
+results table, Excel download from a base64 response) styled without a UI
+framework, mobile-friendly."
+-> Output used as a base for App.jsx / UploadForm.jsx / ResultsTable.jsx /
+   index.css, then trimmed some of the styling to keep it simple.
+
+All AI-generated code was read, tested locally, and adjusted where needed
+before inclusion. I take responsibility for understanding and being able to
+explain every part of this codebase.
